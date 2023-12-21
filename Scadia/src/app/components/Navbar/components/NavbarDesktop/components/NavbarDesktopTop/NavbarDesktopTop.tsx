@@ -7,26 +7,22 @@ import Searchbar from "./components/Searchbar";
 import { useNavbarStore } from "@/app/stores/Navbar";
 
 export default function NavbarDesktopTop() {
-  const store = useNavbarStore();
-  return (
-    <div
-      className="bg-neutral-800"
-      onMouseEnter={() => {
-        store.setShowClothing(false);
-        store.setShowBags(false);
-        store.setShowShoes(false);
-        store.setShowCamping(false);
-      }}
-    >
-      <div
-        id="desktopTop"
-        className="py-3 flex justify-between 3xl:justify-between w-10/12 3xl:w-7/12 mx-auto"
-      >
-        <Brand />
-        <Searchbar />
-        <Login />
-        <Cart />
-      </div>
-    </div>
-  );
+	const store = useNavbarStore();
+	return (
+		<div
+			className="bg-neutral-800"
+			onMouseEnter={() => {
+				store.setShowClothing(false);
+				store.setShowBags(false);
+				store.setShowShoes(false);
+				store.setShowCamping(false);
+			}}>
+			<div id="desktopTop" className="py-3 flex justify-between 3xl:justify-between w-10/12 3xl:w-7/12 mx-auto">
+				<Brand />
+				<Searchbar />
+				<Login />
+				<Cart />
+			</div>
+		</div>
+	);
 }

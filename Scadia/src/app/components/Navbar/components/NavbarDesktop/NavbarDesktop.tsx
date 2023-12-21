@@ -4,11 +4,11 @@ import NavbarDesktopBottom from "./components/NavbarDesktopBottom/NavbarDesktopB
 import NavbarDesktopCollapse from "./components/NavbarDesktopCollapse/NavbarDesktopCollapse";
 
 export default function NavbarDesktop() {
-  return (
-    <div>
-        <NavbarDesktopTop />
-        <NavbarDesktopBottom />
-        <NavbarDesktopCollapse />
-    </div>
-  );
+	return (
+		<div>
+			<NavbarDesktopTop />
+			<NavbarDesktopBottom />
+			<NavbarDesktopCollapse />
+		</div>
+	);
 }
