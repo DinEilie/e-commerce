@@ -6,8 +6,11 @@ import NavbarDesktopCollapse from "./components/NavbarDesktopCollapse/NavbarDesk
 export default function NavbarDesktop() {
 	return (
 		<div>
+			{/* Top navbar including searchbox and brand logo */}
 			<NavbarDesktopTop />
+			{/* Bottom navbar including shop products */}
 			<NavbarDesktopBottom />
+			{/* Hidden navbar that collapse on hover */}
 			<NavbarDesktopCollapse />
 		</div>
 	);

@@ -5,14 +5,10 @@ import React from "react";
 export default function About() {
 	return (
 		<Link
-			className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium"
+			className="hover:text-red-600 focus-visible:text-red-600 py-4 px-20 duration-200 font-medium"
 			href="Navbar"
-			onMouseEnter={() => {
-				console.log("HELLO");
-			}}
-			onMouseLeave={() => {
-				console.log("BYE");
-			}}>
+			onMouseEnter={() => {}}
+			onMouseLeave={() => {}}>
 			<div className="flex gap-3 items-center ">
 				About Us
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">

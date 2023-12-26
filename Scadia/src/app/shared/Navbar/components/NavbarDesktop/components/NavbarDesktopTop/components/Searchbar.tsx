@@ -3,8 +3,16 @@ import React from "react";
 export default function Searchbar() {
 	return (
 		<div className="flex items-center w-1/2">
-			<input type="search" id="searchbar" placeholder="Search..." className="p-2 rounded-l h-full max-h-[40px] w-full text-sm border border-r-0 border-red-300" />
-			<select name="searchCategory" id="searchCategory" className="p-2 h-full max-h-[40px] bg-gray-100 border border-l-0 border-red-300 text-zinc-700 text-sm">
+			<input
+				type="search"
+				id="searchbar"
+				placeholder="Search..."
+				className="p-2 rounded-l h-full max-h-[40px] w-full text-sm border border-r-0 border-red-300"
+			/>
+			<select
+				name="searchCategory"
+				id="searchCategory"
+				className="p-2 h-full max-h-[40px] bg-gray-100 border border-l-0 border-red-300 text-zinc-700 caret-red-600 text-sm">
 				<option selected>All Categories</option>
 				<optgroup label="Clothing">
 					<option value="Jackets">Jackets</option>

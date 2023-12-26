@@ -10,7 +10,7 @@ export default function NavbarDesktopTop() {
 	const store = useNavbarStore();
 	return (
 		<div
-			className="bg-neutral-800"
+			className="bg-neutral-900"
 			onMouseEnter={() => {
 				store.setShowClothing(false);
 				store.setShowBags(false);

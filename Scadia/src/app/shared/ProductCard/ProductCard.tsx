@@ -9,34 +9,36 @@ type ProductCardProps = {
 
 export default function ProductCard(props: ProductCardProps) {
 	return (
-		<div className="w-72">
+		<div className="w-80 border border-zinc-300 bg-white p-5">
 			<div className="relative">
-				<div className="w-72 h-72 bg-zinc-100 flex justify-center items-center rounded-lg hover:cursor-pointer group/card">
-					<Image className="w-64 h-64 group-hover/card:scale-105 duration-500" src={productImage} alt="Product image" />
+				<div className="w-full h-64 flex justify-center items-center hover:cursor-pointer group/card">
+					<Image className="w-60 h-60 group-hover/card:scale-105 duration-500" src={productImage} alt="Product image" />
 				</div>
-				<div className="flex justify-between w-full items-end absolute bottom-0">
-					<div className="px-4 py-2 bg-red-600 text-white font-bold">SALE!</div>
-					{props.isOnSale ? (
-						<div className="px-4 py-2 bg-red-600 text-center text-white font-bold flex flex-col">
-							<span className="line-through font-normal text-red-300 text-sm">$99.00</span>
-							<span className="text-lg">$49.90</span>
-						</div>
-					) : (
-						<div className="px-4 py-2 text-lg bg-red-600 text-center text-white font-bold flex flex-col">$99.90</div>
-					)}
-				</div>
+				{props.isOnSale ? <span className="bg-red-600 py-2 px-5 -translate-x-5 -translate-y-5 text-white absolute top-0">Save 50%</span> : <></>}
 			</div>
 			<div>
-				<div className="text-lg font-bold mt-5 text-ellipsis">Product name</div>
+				{props.isOnSale ? (
+					<div className="flex gap-2 items-end my-3">
+						<span className="text-xl font-semibold text-red-600">$49.90</span>
+						<span className="line-through font-medium text-lg text-zinc-600">$99.00</span>
+					</div>
+				) : (
+					<div className="text-xl my-3 font-semibold text-red-600">$49.90</div>
+				)}
+				<div className="text-lg font-bold text-ellipsis">Product name</div>
 				<p className="text-base truncate mb-2 ">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse pariatur omnis molestiae molestias deserunt nostrum ab distinctio
 					assumenda, ipsum cum et praesentium. Tenetur ex illum corporis, provident molestiae earum dolore!
 				</p>
-				<div className="flex justify-between mt-3">
-					<button type="button" className="bg-red-600 p-3 text-white rounded">
+				<div className="flex flex-col gap-2 mt-10">
+					<button
+						type="button"
+						className="bg-red-600 py-2 px-4 w-full text-white hover:bg-red-500 focus:bg-red-500 focus:outline-blue-800 focus:outline-double focus:outline-[10px] duration-300">
 						Add to cart
 					</button>
-					<button type="button" className="p-3 bg-neutral-800 text-white rounded">
+					<button
+						type="button"
+						className="bg-neutral-800 py-2 px-4 w-full text-white hover:bg-neutral-700 focus:bg-neutral-700 focus:outline-blue-800 focus:outline-double focus:outline-[10px] duration-300">
 						Buy now
 					</button>
 				</div>

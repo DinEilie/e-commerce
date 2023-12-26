@@ -1,15 +1,19 @@
+import Brands from "./components/Brands/Brands";
+import Categories from "./components/Categories/Categories";
+import Incentives from "./components/Incentives/Incentives";
 import Introduction from "./components/Intorduction/Introduction";
-import Navbar from "./components/Navbar/Navbar";
-import ProductCard from "./shared/ProductCard/ProductCard";
+import OnSale from "./components/OnSale/OnSale";
+import Thanks from "./components/Thanks/Thanks";
 
 export default function Home() {
 	return (
 		<main>
-			{/* <Navbar /> */}
 			<Introduction />
-			<div className="flex justify-center">
-				<ProductCard isOnSale={false} productID={22} />
-			</div>
+			<OnSale />
+			<Brands />
+			<Categories />
+			<Incentives />
+			<Thanks />
 		</main>
 	);
 }
