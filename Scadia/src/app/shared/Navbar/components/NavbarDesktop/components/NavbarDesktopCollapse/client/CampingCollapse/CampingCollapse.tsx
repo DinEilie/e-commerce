@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Card from "../shared/Card";
-import imageShoes from "@/app/assets/hiking_shoes.jpg";
-import imageWinter from "@/app/assets/snow_shoes.jpg";
-import imageUrban from "@/app/assets/urban_shoes.jpg";
+import Card from "../../shared/Card";
+import imageEquipment from "@/app/assets/hiking_equipment.jpg";
+import imageCamping from "@/app/assets/camping_tools.jpg";
+import imageCooking from "@/app/assets/cooking_tools.jpg";
 import { useNavbarStore } from "@/app/stores/Navbar";
-export default function ShoesCollapse() {
+export default function CampingCollapse() {
 	const store = useNavbarStore();
 	const [isTransparent, setIsTransparent] = useState<boolean>(true);
 	const [isHidden, setIsHidden] = useState<boolean>(true);
@@ -23,13 +23,13 @@ export default function ShoesCollapse() {
 	};
 
 	useEffect(() => {
-		if (store.showShoes) show();
+		if (store.showCamping) show();
 		else hide();
-	}, [store.showShoes]);
+	}, [store.showCamping]);
 
 	return (
 		<div
-			className={`${isHidden ? "hidden" : ""} ${isTransparent ? "opacity-0" : ""} shadow duration-150 z-0 relative bg-white -translate-y-1`}
+			className={`shadow ${isHidden ? "hidden" : ""} ${isTransparent ? "opacity-0" : ""} duration-150 z-0 relative bg-white -translate-y-1`}
 			onMouseLeave={() => {
 				store.setShowClothing(false);
 				store.setShowBags(false);
@@ -39,25 +39,30 @@ export default function ShoesCollapse() {
 			<div className={`py-5 flex text-lg justify-between w-10/12 3xl:w-7/12 mx-auto`}>
 				<div className="flex flex-col gap-3">
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Hiking & Traveling
+						Tents
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Sports
+						Mattresses
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Winter Boots
+						Knives
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Urban Shoes
+						Cooking Tools
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Leather Shoes
+						All-in-one Tools
 					</Link>
 				</div>
 				<div className="flex gap-10">
-					<Card title="Traveling" alt="A close up image of hiking shoes." description="Walk as long as ever." src={imageShoes} />
-					<Card title="Snow" alt="Walking with huge snow boots." description="Best equipment during the cold days." src={imageWinter} />
-					<Card title="Style" alt="A guy with a groovy shoes." description="Walk awesome on the street." src={imageUrban} />
+					<Card
+						title="Hiking Equipment"
+						alt="Couple arrange their hiking equipment."
+						description="For many years to come."
+						src={imageEquipment}
+					/>
+					<Card title="Tents" alt="Many camping tools and tents." description="Home sweet home." src={imageCamping} />
+					<Card title="Cooking Tools" alt="Pots and pans." description="Shakshouka was never testier." src={imageCooking} />
 				</div>
 			</div>
 		</div>

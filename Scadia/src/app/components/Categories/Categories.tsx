@@ -8,8 +8,8 @@ import campingImage from "@/app/assets/Camping_Image.jpg";
 export default function Categories() {
 	return (
 		<div className="w-10/12 3xl:w-7/12 mx-auto font-semibold">
-			<div className="mt-40 mb-10 text-xl justify-between flex items-center">
-				<span className="text-2xl font-bold">Shop by category</span>
+			<div className="mt-20 mb-10 text-xl justify-between flex items-center">
+				<span className="text-3xl font-bold">Shop by category</span>
 			</div>
 			<div className="flex items-center gap-4">
 				<div className=" bg-slate-500 group/scale relative text-white overflow-hidden w-1/2 h-[490px] rounded-3xl">

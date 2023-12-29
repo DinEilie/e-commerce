@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Card from "../shared/Card";
+import Card from "../../shared/Card";
 import imageTshirt from "@/app/assets/hiking_tshirts.jpg";
 import imagePants from "@/app/assets/hiking_pants.jpg";
 import imageJacket from "@/app/assets/hiking_jackets.jpg";

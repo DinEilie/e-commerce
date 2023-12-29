@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<section id="navbar">
 					<Navbar />
 				</section>
-				<section id="body" className="bg-neutral-100">
+				<section id="body" className="mt-[157px] bg-neutral-100">
 					{children}
 				</section>
 				<section id="footer" className="bg-neutral-800">

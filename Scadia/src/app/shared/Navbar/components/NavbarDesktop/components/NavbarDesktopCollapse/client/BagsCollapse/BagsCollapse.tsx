@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Card from "../shared/Card";
-import imageEquipment from "@/app/assets/hiking_equipment.jpg";
-import imageCamping from "@/app/assets/camping_tools.jpg";
-import imageCooking from "@/app/assets/cooking_tools.jpg";
+import Card from "../../shared/Card";
+import imageBag from "@/app/assets/hiking_bag.jpg";
+import imageBagpack from "@/app/assets/hiking_bagpack.jpg";
+import imageCamera from "@/app/assets/camera_bag.jpg";
 import { useNavbarStore } from "@/app/stores/Navbar";
-export default function CampingCollapse() {
+export default function BagsCollapse() {
 	const store = useNavbarStore();
 	const [isTransparent, setIsTransparent] = useState<boolean>(true);
 	const [isHidden, setIsHidden] = useState<boolean>(true);
@@ -23,9 +23,9 @@ export default function CampingCollapse() {
 	};
 
 	useEffect(() => {
-		if (store.showCamping) show();
+		if (store.showBags) show();
 		else hide();
-	}, [store.showCamping]);
+	}, [store.showBags]);
 
 	return (
 		<div
@@ -39,30 +39,35 @@ export default function CampingCollapse() {
 			<div className={`py-5 flex text-lg justify-between w-10/12 3xl:w-7/12 mx-auto`}>
 				<div className="flex flex-col gap-3">
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Tents
+						Travel Bags
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Mattresses
+						Backpacks
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Knives
+						Messenger Bags
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						Cooking Tools
+						Camera Bags
 					</Link>
 					<Link className="hover:text-red-600 focus-visible:text-red-600 duration-200 font-medium" href="Navbar">
-						All-in-one Tools
+						Suitcases
 					</Link>
 				</div>
 				<div className="flex gap-10">
+					<Card title="Students Bags" alt="A female student enjoys her bag." description="Plenty of room for many books." src={imageBag} />
 					<Card
-						title="Hiking Equipment"
-						alt="Couple arrange their hiking equipment."
-						description="For many years to come."
-						src={imageEquipment}
+						title="Hiking Bagpacks"
+						alt="A man hiking with a big bagpack."
+						description="Store and carry all of your wares with you."
+						src={imageBagpack}
 					/>
-					<Card title="Tents" alt="Many camping tools and tents." description="Home sweet home." src={imageCamping} />
-					<Card title="Cooking Tools" alt="Pots and pans." description="Shakshouka was never testier." src={imageCooking} />
+					<Card
+						title="Cameras Suitcases"
+						alt="A camera with its suitcase."
+						description="High durability and shock resistance."
+						src={imageCamera}
+					/>
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,7 @@ import IntroStyle from "./Introduction.module.css";
 export default function Introduction() {
 	return (
 		<div className={`${IntroStyle.background}`}>
-			<div className={`w-full h-[720px] mt-40 flex flex-col justify-center backdrop-blur-sm backdrop-brightness-50 items-center`}>
+			<div className={`w-full h-[720px] flex flex-col justify-center backdrop-blur-sm backdrop-brightness-50 items-center`}>
 				<div id="introduction_body" className="w-9/12 flex justify-center items-center gap-16 3xl:gap-32">
 					<div className="text-white w-1/3">
 						<div className="text-5xl font-semibold capitalize">

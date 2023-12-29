@@ -1,9 +1,9 @@
 import React from "react";
-import Clothing from "./components/Clothing";
-import Bags from "./components/Bags";
-import Shoes from "./components/Shoes";
-import Camping from "./components/Camping";
-import About from "./components/About";
+import Clothing from "./client/Clothing/Clothing";
+import Bags from "./client/Bags/Bags";
+import Shoes from "./client/Shoes/Shoes";
+import Camping from "./client/Camping/Camping";
+import About from "./client/About/About";
 
 export default function NavbarDesktopBottom() {
 	return (

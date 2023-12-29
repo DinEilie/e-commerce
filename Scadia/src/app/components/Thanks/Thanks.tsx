@@ -11,7 +11,7 @@ export default function Thanks() {
 			</div>
 			<div className="w-1/2 flex flex-row items-center">
 				<div>
-					<div className="text-2xl font-bold py-2">Why choosing us?</div>
+					<div className="text-3xl font-bold py-2">Why choosing us?</div>
 					<p className="text-lg leading-7 mb-5 text-zinc-600 font-normal">
 						At <span className="font-extrabold tracking-wider">Scadia</span>, Elevate Your Outdoor Experience with ours unrivaled expertise and
 						premium selection! Discover the top reasons to make us your go-to destination for Hiking, camping, and outdoor gear. From quality

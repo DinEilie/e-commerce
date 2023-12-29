@@ -1,8 +1,8 @@
 import React from "react";
-import ClothingCollapse from "./components/ClothingCollapse/ClothingCollapse";
-import BagsCollapse from "./components/BagsCollapse/BagsCollapse";
-import ShoesCollapse from "./components/ShoesCollapse/ShoesCollapse";
-import CampingCollapse from "./components/CampingCollapse/CampingCollapse";
+import ClothingCollapse from "./client/ClothingCollapse/ClothingCollapse";
+import BagsCollapse from "./client/BagsCollapse/BagsCollapse";
+import ShoesCollapse from "./client/ShoesCollapse/ShoesCollapse";
+import CampingCollapse from "./client/CampingCollapse/CampingCollapse";
 
 export default function NavbarDesktopCollapse() {
 	return (

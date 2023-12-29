@@ -4,7 +4,7 @@ export default function Incentives() {
 	return (
 		<div className="w-10/12 3xl:w-7/12 mx-auto font-semibold">
 			<div className="mt-40 mb-10 text-xl justify-between flex items-center">
-				<span className="text-2xl font-bold">Great customer service</span>
+				<span className="text-3xl font-bold">Great customer service</span>
 			</div>
 			<div className="flex">
 				<div className="flex gap-10 px-6 items-center flex-grow border-r border-zinc-300">

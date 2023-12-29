@@ -6,7 +6,7 @@ export default function OnSale() {
 	return (
 		<div className="w-10/12 3xl:w-7/12 mx-auto font-semibold">
 			<div className="mt-20 mb-10 text-xl justify-between flex items-center">
-				<span className="text-2xl font-bold">Unique collection</span>
+				<span className="text-3xl font-bold">Unique collection</span>
 				<div className="items-center group/view gap-2 flex overflow-hidden text-red-600">
 					<Link href={""} className="translate-x-7 group-hover/view:translate-x-0 duration-200">
 						View more
