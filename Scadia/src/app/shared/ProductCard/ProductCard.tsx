@@ -33,7 +33,7 @@ export default function ProductCard(props: ProductCardProps) {
 				<div className="flex flex-col gap-2 mt-10">
 					<button
 						type="button"
-						className="bg-red-600 py-2 px-4 w-full text-white hover:bg-red-500 focus:bg-red-500 focus:outline-blue-800 focus:outline-double focus:outline-[10px] duration-300">
+						className="bg-red-600 shadow-lg hover:shadow-red-600/50 py-2 px-4 w-full text-white hover:bg-red-500 focus:bg-red-500 focus:outline-blue-800 focus:outline-double focus:outline-[10px] duration-300">
 						Add to cart
 					</button>
 					<button

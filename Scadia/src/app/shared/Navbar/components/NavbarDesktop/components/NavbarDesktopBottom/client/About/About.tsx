@@ -1,14 +1,9 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 
 export default function About() {
 	return (
-		<Link
-			className="hover:text-red-600 focus-visible:text-red-600 py-4 px-20 duration-200 font-medium"
-			href="Navbar"
-			onMouseEnter={() => {}}
-			onMouseLeave={() => {}}>
+		<Link className="hover:text-red-600 focus-visible:text-red-600 py-4 px-20 duration-200 font-medium" href="/about" as="/about">
 			<div className="flex gap-3 items-center ">
 				About Us
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">

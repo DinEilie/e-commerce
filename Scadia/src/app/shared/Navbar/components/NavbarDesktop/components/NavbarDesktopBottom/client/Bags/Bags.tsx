@@ -8,7 +8,14 @@ export default function Bags() {
 	return (
 		<Link
 			className={`${store.showBags ? "text-red-600 border-b border-red-600" : ""} focus-visible:text-red-600 py-4 pr-10 duration-200 font-medium`}
-			href="Navbar"
+			href="/shop?category=bags&view=all"
+			as="/shop?category=bags&view=all"
+			onClick={() => {
+				store.setShowBags(false);
+				store.setShowShoes(false);
+				store.setShowCamping(false);
+				store.setShowClothing(false);
+			}}
 			onMouseEnter={() => {
 				if (store.showClothing || store.showCamping || store.showShoes) {
 					store.setShowClothing(false);

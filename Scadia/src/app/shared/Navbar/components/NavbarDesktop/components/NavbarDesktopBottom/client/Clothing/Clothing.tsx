@@ -10,7 +10,14 @@ export default function Clothing() {
 			className={`${
 				store.showClothing ? "text-red-600 border-b border-red-600" : ""
 			} focus-visible:text-red-600 py-4 pr-10 duration-200 font-medium`}
-			href="Navbar"
+			href="/shop?category=clothing&view=all"
+			as="/shop?category=clothing&view=all"
+			onClick={() => {
+				store.setShowBags(false);
+				store.setShowShoes(false);
+				store.setShowCamping(false);
+				store.setShowClothing(false);
+			}}
 			onMouseEnter={() => {
 				if (store.showBags || store.showCamping || store.showShoes) {
 					store.setShowBags(false);
