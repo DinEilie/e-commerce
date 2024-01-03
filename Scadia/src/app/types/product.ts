@@ -20,5 +20,8 @@ export type ProductType = {
 	productCategory: string; // Product category
 	productType: string;
 	productBrand: string; // Product brand
-	productImageURL: StaticImageData; // Product image URL
+	productImageURL0: StaticImageData; // Product image URL
+	productImageURL1: StaticImageData;
+	productImageURL2: StaticImageData;
+	productImageURL3: StaticImageData;
 };
