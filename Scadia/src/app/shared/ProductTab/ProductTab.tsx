@@ -23,7 +23,7 @@ type ProductTabProps = {
   productQuantity: number;
   productCategory: string;
   productBrand: string;
-  productImageURL0: StaticImageData;
+  productImageURL0: StaticImageData | string;
 };
 
 export default function ProductTab(props: ProductTabProps) {
@@ -48,11 +48,14 @@ export default function ProductTab(props: ProductTabProps) {
       <div className='relative w-fit'>
         <Link
           href={`/shop/product/${props.productID}`}
+          as={`/shop/product/${props.productID}`}
           className='group/card flex h-64 w-64 items-center justify-center hover:cursor-pointer'>
           <Image
             className='h-60 w-60 duration-500 group-hover/card:scale-105'
             src={props.productImageURL0}
             alt='Product image'
+            width={240}
+            height={240}
           />
         </Link>
         {props.isOnSale ? (

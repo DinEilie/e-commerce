@@ -12,7 +12,7 @@ type ProductGalleryProps = {
 
 export default function ProductGallery(props: ProductGalleryProps) {
   // Hooks
-  const [currentImg, setCurrentImg] = useState<StaticImageData | undefined>();
+  const [currentImg, setCurrentImg] = useState<string | StaticImageData | undefined>();
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
   // // On render
@@ -22,13 +22,18 @@ export default function ProductGallery(props: ProductGalleryProps) {
 
   return (
     <div>
-      <Image
-        className='h-96 w-96'
-        src={currentImg ?? ''}
-        alt={`${props.product?.productName} by ${props.product?.productBrand}`}
-      />
+      <div className='mx-auto mb-5 h-96 w-96 overflow-hidden rounded-md'>
+        <Image
+          height={'384'}
+          width={'384'}
+          src={currentImg ?? ''}
+          alt={`${props.product?.productName} by ${props.product?.productBrand}`}
+        />
+      </div>
       <div className='flex gap-3'>
         <Image
+          height={'96'}
+          width={'96'}
           onClick={() => {
             setCurrentImg(props.product?.productImageURL0);
             setCurrentImgIndex(0);
@@ -38,6 +43,8 @@ export default function ProductGallery(props: ProductGalleryProps) {
           alt={`${props.product?.productName} by ${props.product?.productBrand}`}
         />
         <Image
+          height={'96'}
+          width={'96'}
           onClick={() => {
             setCurrentImg(props.product?.productImageURL1);
             setCurrentImgIndex(1);
@@ -47,6 +54,8 @@ export default function ProductGallery(props: ProductGalleryProps) {
           alt={`${props.product?.productName} by ${props.product?.productBrand}`}
         />
         <Image
+          height={'96'}
+          width={'96'}
           onClick={() => {
             setCurrentImg(props.product?.productImageURL2);
             setCurrentImgIndex(2);
@@ -56,6 +65,8 @@ export default function ProductGallery(props: ProductGalleryProps) {
           alt={`${props.product?.productName} by ${props.product?.productBrand}`}
         />
         <Image
+          height={'96'}
+          width={'96'}
           onClick={() => {
             setCurrentImg(props.product?.productImageURL3);
             setCurrentImgIndex(3);
