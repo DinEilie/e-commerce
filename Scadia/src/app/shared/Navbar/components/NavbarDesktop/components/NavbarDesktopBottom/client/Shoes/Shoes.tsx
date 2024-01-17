@@ -10,8 +10,8 @@ export default function Shoes() {
       className={`${
         store.showShoes ? 'border-b border-red-600 text-red-600' : ''
       } px-2 py-4 font-medium duration-200 focus-visible:text-red-600`}
-      href='/shop?category=shoes&view=all'
-      as='/shop?category=shoes&view=all'
+      href='/shop?category=shoes&view=all&limit=9'
+      as='/shop?category=shoes&view=all&limit=9'
       onClick={() => {
         store.setShowBags(false);
         store.setShowShoes(false);

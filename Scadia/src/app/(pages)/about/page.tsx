@@ -38,6 +38,19 @@ export default function page() {
       <div className='my-16 bg-gradient-to-r from-red-600 to-pink-500 bg-clip-text text-center text-5xl font-extrabold text-transparent'>
         Contact Us!
       </div>
+      <p className='mx-auto w-2/3 text-center'>
+        Get in touch with Scadia – your premier online outdoor store located in the heart of Tel Aviv. Whether you have
+        questions about our curated collection of high-quality outdoor gear and apparel or need assistance in selecting
+        the perfect equipment for your adventure, our team is here to help. At Scadia, we value customer satisfaction
+        and are committed to providing excellent service. Reach out to us via email at <b>info@scadia.com</b> or through
+        our contact form below. Your outdoor journey starts here, and we look forward to assisting you every step of the
+        way.
+      </p>
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54084.949090626884!2d34.83844526469505!3d32.08792483340408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2z16rXnCDXkNeR15nXkS3Xmdek15U!5e0!3m2!1siw!2sil!4v1705503671828!5m2!1siw!2sil'
+        width='600'
+        height='450'
+        className='mx-auto'></iframe>
     </div>
   );
 }
