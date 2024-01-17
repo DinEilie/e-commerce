@@ -1,4 +1,3 @@
-import { productsData } from '@/app/types/productsData';
 import { Database } from '@/app/types/supabase';
 import { ProductType } from '@/app/types/product';
 import { ProductSupabaseResponseType } from '@/app/types/productSupabaseResponse';

@@ -5,7 +5,6 @@ import type { Database } from '@/app/types/supabase';
 import type { CartSupabaseResponseType } from '@/app/types/cartSupabaseResponse';
 import { CartType } from '@/app/types/cart';
 import { ProductSupabaseResponseType } from '@/app/types/productSupabaseResponse';
-import { boolean } from 'zod';
 import { ProductSizeType } from '@/app/types/productSize';
 
 // Fetch the product information accordingly
